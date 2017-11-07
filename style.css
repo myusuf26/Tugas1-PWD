@@ -1,0 +1,415 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: calibry, ,segor, arial, tahoma, sans-serif;
+}
+body{
+  background-color: #DDDDDD;
+  padding-top: 20px
+}
+#wrapper{
+  width: 85%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+#header{
+  background: #1e90ff;
+  height: 100%;
+  padding: 5px;
+
+  margin: 0 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#header img{
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+}
+#menu-utama{
+  margin-top: 3px;
+  list-style: none;
+}
+#menu-utama li{
+  float: left;
+  padding: 8px 20px;
+  border-right: 1px solid #555555;
+}
+#menu-utama li a{
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+}
+#header form{
+  float: right;
+  margin-top: -20px;
+  margin-right: 60px;
+}
+
+#header from input{
+  border: none;
+  height: 20px;
+}
+#daftar-home{
+  width: 670px;
+  float: left;
+  margin-top: 0.5em;
+}
+.home{
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.home img{
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.home p{
+  text-align: justify;
+  margin: 30px 0;
+}
+.home a{
+  display: block;
+  text-align: right;
+  color: #636363;
+}
+.home h1{
+  text-align: center;
+}
+
+
+
+#artikel{
+  background: white;
+  width: 680px;
+  margin-bottom: 20px
+  overflow: hidden;
+  float: left;
+
+}
+.artikel h1{
+  text-align: center;
+}
+.artikel p{
+  text-align: justify;
+  padding: 20px;
+}
+#daftar{
+  width: 670px;
+  float: left;
+}
+.daftar home{
+  background: #ffffff;
+  padding: 100px;
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+.daftar{
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.daftar p{
+  margin: 10px 0;
+}
+
+#sidebar{
+  width: 270px;
+  float: right;
+  background: #fff;
+padding: 10px
+}
+
+#sidebar ul{
+  margin-left: 15px;
+}
+#sidebar h2 {
+  font-size: 18px;
+  margin: 10px 0;
+
+}
+#sidebar p{
+  line-height: 20px;
+  color: #636363;
+}
+#sidebar ul li a{
+  color: #636363;
+  text-decoration: none;
+
+
+}
+#footer{
+  clear: both;
+  margin: 20px 0;
+  margin-top: 50em;
+  text-align: center;
+  background-color: #1e90ff;
+  padding: 5px;
+  color: black;
+}
+
+#myform{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+#daftar-foto{
+  width: 670px;
+  float: left;
+
+}
+.foto{
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.foto img{
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.foto p{
+  margin: 10px 0;
+}
+.foto a{
+  display: block;
+  text-align: right;
+  color: #636363;
+}
+.foto h1{
+  text-align: center;
+}
+
+.form_contact label{
+  display: block;
+}
+.form_contact p{
+  margin: 0;
+}
+.form_contact button,input,textarea{
+  padding: 0.5em;
+  margin-top: -0.5em;
+}
+
+button{
+  background: lightgray;
+  width: 25%;
+  padding: 15px;
+  border: 0;
+}
+button:hover , button:focus {
+  background: gold;
+  outline: 0;
+}
+input:focus, textarea:focus{
+  outline: 3px solid gold;
+}
+nav input{
+  padding: 0.5em;
+  margin-left: 400px;
+}
+nav ul{
+  padding: 0.5em;
+  margin: 12px;
+}
+#table-agenda{
+  width: 670px;
+  float: left;
+
+}
+.agenda{
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 3px 1px #ddd;
+  overflow: hidden;
+  border: 10px solid #fff;
+}
+.agenda th, td{
+  vertical-align: top;
+  padding: 10px 7px;
+  text-align: left;
+  margin: 0;
+}
+.agenda tbody tr:nth-child(odd){
+  background: #eee;
+}
+
+/*kalender*/
+.main {
+width:260px;
+border:1px solid blue;
+}
+.month {
+background-color:white;
+font:bold 12px verdana;
+color:black;
+}
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: lightyellow;
+padding: 2px;
+}
+.days #today{
+font-weight: bold;
+color: red;
+}
+
+/*** MEDIA QUERIES ***/
+/* JIKA BERUKURAN 980px atau kurang */
+@media screen and (max-width: 980px){
+	#daftar-home {
+		width: 94%;
+	}
+	#artikel {
+		width: 65%;
+	}
+
+	#daftar{
+		width: 65%;
+	}
+  #daftar-foto{
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#daftar-home {
+		width: auto;
+		float: none;
+	}
+	#artikel{
+		width: auto;
+		float: none;
+	}
+	#daftar {
+		width: auto;
+		float: none;
+	}
+  #daftar-foto {
+		width: auto;
+		float: none;
+	}
+  #sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header{
+		height: auto;
+	}
+	h1{
+		font-size: 24px;
+	}
+	#sidebar {
+		dispaly; none;
+	}
+}
+
+
+@media screen and (max-width: 980px) {
+  #daftar-home {
+		width: 96%;
+	}
+	#artikel {
+		width: 65%;
+	}
+
+	#daftar{
+		width: 65%;
+	}
+  #daftar-foto{
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+  #daftar-home {
+    width: auto;
+    float: none;
+  }
+  #artikel{
+    width: auto;
+    float: none;
+  }
+  #daftar {
+    width: auto;
+    float: none;
+  }
+  #daftar-foto {
+    width: auto;
+    float: none;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #daftar-home {
+		width: auto;
+		float: none;
+	}
+	#artikel{
+		width: auto;
+		float: none;
+	}
+	#daftar {
+		width: auto;
+		float: none;
+	}
+  #daftar-foto {
+		width: auto;
+		float: none;
+	}
+  #sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/*jam*/
+#clockDisplay {
+  background-color: deepskyblue;
+}
+
+.clockStyle{
+background-color:#000;
+border:#999 2px inset;
+padding:6px;
+color:#fff;
+font-family:"arial black";
+font-size:16px;
+font-weight:bold;
+letter-spacing:2px;
+display:inline;
+position: relative;
+left: 570px;
+margin-left: 300px;
+}

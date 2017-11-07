@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Forsipka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <img src="images/forsipka_logo1.PNG" alt="logo">
+      <div id="clockDisplay" class="clockStyle">
+      </div>
+        <script type="text/javascript" language="javascript">
+            function renderTime(){
+             var currentTime = new Date();
+             var h = currentTime.getHours();
+             var m = currentTime.getMinutes();
+             var s = currentTime.getSeconds();
+             if (h == 0){
+              h = 24;
+               }
+               if (h < 10){
+                h = "0" + h;
+                }
+                if (m < 10){
+                m = "0" + m;
+                }
+                if (s < 10){
+                s = "0" + s;
+                }
+             var myClock = document.getElementById('clockDisplay');
+             myClock.textContent = h + ":" + m + ":" + s + "";
+             setTimeout ('renderTime()',1000);
+             }
+             renderTime();
+        </script>
+      <nav>
+        <ul id="menu-utama">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="foto.html">Foto</a></li>
+          <li><a href="contactus.html">Daftar</a></li>
+        </ul>
+          <input type="text" name="search" placeholder="Cari">
+      </nav>
+    </div>
+    <marquee bgcolor="#808080"><h1>Selamat Datang Di Website resmi FORSIPKA</h1></marquee>
+    <div id="table-agenda">
+      <table class="agenda" border="1">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kegiatan</th>
+            <th>Tanggal Pelaksanaan</th>
+            <th>Tempat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Rapat Rutin</td>
+            <td>1 Oktober 2017</td>
+            <td>Masjid Al-Hidayah</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bimbingan Pengajar TPA</td>
+            <td>13 Oktober 2017</td>
+            <td>Masjid Al-Taubat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rapat Pemantapan Outbond</td>
+            <td>16 Oktober 2017</td>
+            <td>Masjid Al-Khasanah</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Outbond</td>
+            <td>19 Oktober 2017</td>
+            <td>Halaman Masjid Al-Ikhlas</td>
+          </tr>
+        </tbody>
+    </table>
+    </div><!--penutup daftar artikel-->
+    <div id="sidebar">
+      <script type="text/javascript" src="http://subhishine.freehostia.com/shine/files/basiccalendar.js">
+      </script>
+      <script type="text/javascript">
+      var todaydate=new Date()
+      var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+      var curyear=todaydate.getFullYear() //get current year
+      document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));
+      </script>
+      <h2>Tentang  FORSIPKA</h2>
+      <p>Forsipka didirikan untuk menyampaikan aspirasi bagi para tenaga pengajar guna memajuka TPA desa Kalijirak
+      selain itu juga sebagai tempat untuk berkumpulnya para pengajar TPA. Peran forsipka adalah sebuah organisasi keagamaan
+      khususnya di bidang TPA."</p>
+    <h2>Artikel Lainnya</h2>
+    <ul>
+      <li><a href="">Belajar Menghafal Juz'ama</a></li>
+      <li><a href="">Metode Iqro</a></li>
+      <li><a href="">Menghafal Al-quran</a></li>
+      <li><a href="">Lagu islam</a></li>
+      <li><a href="">Jadwal Tpa se-kalijirak</a></li>
+      <li><a href="">Materi PAI</a></li>
+    </ul>
+    </div>
+    <div id="footer">
+      <p>Desain Web Copyright 2017 by M Yusuf Abdul M</p>
+    </div>
+  </div>
+</body>
+</html>
